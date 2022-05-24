@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background: #898377;
+}
+
+.image-slider-container {
+    border: 1px solid black;
+    padding: 10px;
+}
+.image-slider-container h1 {
+    padding: 15px;
+    text-align: center;
+}
+.gallery-view {
+    height: 600px;
+    max-width: 800px;
+    border-radius: 15px;
+    margin: 0 auto;
+    background: #b9b9b9;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.slide {
+    position: relative;
+    height: 580px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    transition: 0.5s;
+}
+.image {
+    height: 580px;
+    width: 780px !important;
+    background: #fff9ed;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+.image-title {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+    font-size: 22px;
+    width: 100%;
+    color: white;
+    background: #71717152;
+    backdrop-filter: blur(10px);
+}
+.image img {
+    width: 100%;
+    height: auto;
+}
+.ctrl-btn {
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+.ctrl-btn.l {
+    top: 350px;
+}
+.ctrl-btn.r {
+    top: 350px;
+}
